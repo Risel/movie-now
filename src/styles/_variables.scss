@@ -1,0 +1,18 @@
+ $black: #000;
+  $white: #fff;
+  $red-color: #FA2828;
+  $red-hover: #FF5252;
+  $movie-pic-bg: #988F8F;
+  $movie-bg:#4D4747;
+  $secondary-bg: #C4C4C4;
+
+ @mixin font($name, $weight) {
+   @font-face {
+     font: {
+       family: $name;
+       weight: $weight;
+       display: swap;
+     }
+     src: url("@/fonts/#{ $name }-#{ $weight }.ttf") format("trueformat")
+   }
+ }
