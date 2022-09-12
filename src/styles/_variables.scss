@@ -1,22 +1,21 @@
- $black: #000;
-  $white: #fff;
-  $red-color: #FA2828;
-  $red-hover: #FF5252;
-  $movie-poster-bg: #C4C4C4;
-  $movie-bg:#4D4747;
-  $text-secondary: #988F8F;
-  $main-bg:#363232;
- $text-actors: #e5e5e5;
+$black: #000;
+$white: #fff;
+$red-color: #FA2828;
+$red-hover: #FF5252;
+$movie-poster-bg: #C4C4C4;
+$movie-bg: #4D4747;
+$text-secondary: #988F8F;
+$main-bg: #363232;
+$text-actors: #e5e5e5;
 
 
-
- @mixin font($name, $weight) {
-   @font-face {
-     font: {
-       family: $name;
-       weight: $weight;
-       display: swap;
-     }
-     src: url("@/fonts/#{ $name }-#{ $weight }.ttf") format("trueformat")
-   }
- }
+@mixin font($name, $weight) {
+  @font-face {
+    font: {
+      family: $name;
+      weight: $weight;
+      display: swap;
+    }
+    src: url("@/fonts/#{ $name }-#{ $weight }.ttf") format("trueformat")
+  }
+}

@@ -1,9 +1,10 @@
 <template>
-  <div class = 'about-page'>
-    <div class = "about-page__back">
+  <div class='about-page'>
+    <div class="about-page__back">
       <router-link to="/" class="about-page__link">
         <svg width="20" height="28" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M11.67 1.8701L9.9 0.100098L0 10.0001L9.9 19.9001L11.67 18.1301L3.54 10.0001L11.67 1.8701Z" fill="#FF5252" fill-opacity="0.98"/>
+          <path d="M11.67 1.8701L9.9 0.100098L0 10.0001L9.9 19.9001L11.67 18.1301L3.54 10.0001L11.67 1.8701Z"
+                fill="#FF5252" fill-opacity="0.98"/>
         </svg>
         <span>Назад к списку</span>
       </router-link>
@@ -11,8 +12,8 @@
     </div>
     <CustomLoader v-if="isLoading"/>
     <template v-else>
-      <MovieCard v-if="movie" :movie = "movie"/>
-      <span v-else class = "about-page__error">{{error}}</span>
+      <MovieCard v-if="movie" :movie="movie"/>
+      <span v-else class="about-page__error">{{ error }}</span>
     </template>
   </div>
 </template>
@@ -43,7 +44,7 @@ export default {
       this.setLoading(true)
       getMovie(id).then((res) => {
         const data = res.data
-        if(data){
+        if (data) {
           this.movie = data
         } else {
           this.setError('К сожалению по вашему запросу ничего не найдено...')
@@ -53,7 +54,7 @@ export default {
     }
   },
   beforeMount() {
-    const {id :movieId} = this.$route.params;
+    const {id: movieId} = this.$route.params;
     const movie = this.$store.getters.getMovieById(movieId)
 
     if (movie) {
@@ -65,13 +66,15 @@ export default {
 }
 </script>
 
-<style lang = "scss" scoped>
+<style lang="scss" scoped>
 .about-page {
   min-height: 100vh;
   background-color: $main-bg;
+
   &__back {
     margin-bottom: 26px;
   }
+
   &__link {
     display: flex;
     justify-content: space-between;
@@ -80,9 +83,11 @@ export default {
     width: 220px;
     color: $red-color;
     font-size: 22px;
-    &:hover{
-    color: $red-hover;
+
+    &:hover {
+      color: $red-hover;
     }
+
     &__underline {
       min-width: 100vw;
       height: 30px;

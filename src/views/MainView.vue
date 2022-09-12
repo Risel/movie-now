@@ -85,7 +85,7 @@ export default {
     font-size: 32px;
     color: #ffffff;
     margin-bottom: 16px;
-    padding:8px;
+    padding: 8px;
   }
 
   &__sort {

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export async function fetchMovies(){
+export async function fetchMovies() {
   try {
     const res = await axios.get('https://floating-sierra-20135.herokuapp.com/api/movies')
     return res.data

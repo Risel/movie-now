@@ -5,6 +5,7 @@
 
 <script>
 import Header from "@/components/Header";
+
 export default {
   name: 'App',
   components: {
@@ -15,7 +16,7 @@ export default {
 
 
 <style>
-*{
+* {
   font-family: Roboto;
   margin: 0;
   padding: 0;

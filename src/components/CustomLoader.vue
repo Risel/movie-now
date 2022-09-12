@@ -29,6 +29,7 @@ export default {};
     transform: rotate(-360deg);
   }
 }
+
 .preloader {
   width: 126px;
   height: 116px;
