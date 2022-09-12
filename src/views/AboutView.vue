@@ -82,7 +82,7 @@ export default {
     align-items: center;
     width: 220px;
     color: $red-color;
-    font-size: 22px;
+    font-size: 20px;
 
     &:hover {
       color: $red-hover;
