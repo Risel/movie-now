@@ -1,5 +1,9 @@
 # movienow-vue
 
+
+## Production build
+https://movie-now.netlify.app/about/368539
+
 ## Project setup
 ```
 npm install
