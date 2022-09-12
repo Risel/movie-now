@@ -25,8 +25,12 @@ export default {
     line-height: 48px;
     letter-spacing: 0.21em;
     text-align: center;
-    color: #000;
-    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: #000;
+      cursor: pointer;
+    }
   }
 }
 </style>

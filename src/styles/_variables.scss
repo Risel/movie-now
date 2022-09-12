@@ -2,9 +2,13 @@
   $white: #fff;
   $red-color: #FA2828;
   $red-hover: #FF5252;
-  $movie-pic-bg: #988F8F;
+  $movie-poster-bg: #C4C4C4;
   $movie-bg:#4D4747;
-  $secondary-bg: #C4C4C4;
+  $text-secondary: #988F8F;
+  $main-bg:#363232;
+ $text-actors: #e5e5e5;
+
+
 
  @mixin font($name, $weight) {
    @font-face {
